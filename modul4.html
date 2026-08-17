@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul Ajar: Brainstorming - Evaluasi Akhir</title>
+
+    <!-- Google Fonts & Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet">
+
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Top Progress Bar Container -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scrollProgress"></div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-left">
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+            <h2 class="header-title">IMPLEMENTASI UI/UX MENGGUNAKAN STITCH DAN ANTIGRAVITY</h2>
+        </div>
+        <div class="header-right">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+                <span class="material-symbols-outlined" id="themeIcon">dark_mode</span>
+            </button>
+        </div>
+    </header>
+
+    <div class="app-layout">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+
+
+            <nav class="sidebar-nav">
+                <ul class="nav-list">
+                    <li class="nav-item collapsed">
+                        <a href="index.html" class="nav-link">
+                            <span class="material-symbols-outlined">counter_1</span>
+                            <span>Pendahuluan</span>
+                            <span class="material-symbols-outlined caret-icon">expand_more</span>
+                        </a>
+                        <ul class="nav-sub-list">
+                            <li><a href="index.html#sub1" class="nav-sub-link">Pengenalan Stitch</a></li>
+                            <li><a href="index.html#sub2" class="nav-sub-link">Pengenalan Antigravity</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item collapsed">
+                        <a href="instalasi.html" class="nav-link">
+                            <span class="material-symbols-outlined">counter_2</span>
+                            <span>Instalasi & Setup</span>
+                            <span class="material-symbols-outlined caret-icon">expand_more</span>
+                        </a>
+                        <ul class="nav-sub-list">
+                            <li><a href="instalasi.html#sub1" class="nav-sub-link">Instalasi & Setup Antigravity</a></li>
+                            <li><a href="instalasi.html#sub2" class="nav-sub-link">Setup Google Stitch</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item collapsed">
+                        <a href="modul1.html" class="nav-link">
+                            <span class="material-symbols-outlined">counter_3</span>
+                            <span>Brainstorming</span>
+                            <span class="material-symbols-outlined caret-icon">expand_more</span>
+                        </a>
+                        <ul class="nav-sub-list">
+                            <li><a href="modul1.html#sub1" class="nav-sub-link">PRD (Requirement)</a></li>
+                            <li><a href="modul1.html#sub2" class="nav-sub-link">Referensi Desain</a></li>
+                            <li><a href="modul1.html#sub3" class="nav-sub-link">Design Md & Prompting</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item collapsed">
+                        <a href="modul2.html" class="nav-link">
+                            <span class="material-symbols-outlined">counter_4</span>
+                            <span>Desain Prototype</span>
+                            <span class="material-symbols-outlined caret-icon">expand_more</span>
+                        </a>
+                        <ul class="nav-sub-list">
+                            <li><a href="modul2.html#sub1" class="nav-sub-link">Prompting per halaman</a></li>
+                            <li><a href="modul2.html#sub2" class="nav-sub-link">Prototype</a></li>
+                            <li><a href="modul2.html#sub3" class="nav-sub-link">Setup dan Export MCP</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item collapsed">
+                        <a href="modul3.html" class="nav-link">
+                            <span class="material-symbols-outlined">counter_5</span>
+                            <span>Merancang Frontend</span>
+                            <span class="material-symbols-outlined caret-icon">expand_more</span>
+                        </a>
+                        <ul class="nav-sub-list">
+                            <li><a href="modul3.html#sub1" class="nav-sub-link">Prompting per halaman</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="modul4.html" class="nav-link">
+                            <span class="material-symbols-outlined">counter_6</span>
+                            <span>Merancang Backend</span>
+                            <span class="material-symbols-outlined caret-icon">expand_more</span>
+                        </a>
+                        <ul class="nav-sub-list">
+                            <li><a href="modul4.html#sub1" class="nav-sub-link active">Prompting per halaman</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item collapsed">
+                        <a href="modul5.html" class="nav-link">
+                            <span class="material-symbols-outlined">counter_7</span>
+                            <span>Deployment</span>
+                            <span class="material-symbols-outlined caret-icon">expand_more</span>
+                        </a>
+                        <ul class="nav-sub-list">
+                            <li><a href="modul5.html#sub1" class="nav-sub-link">Deploy dengan Github</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="modul5.html" class="btn btn-primary btn-block mb-3">
+                    Lanjutkan Belajar
+                </a>
+                <a href="#" class="btn btn-secondary btn-block mb-3">
+                    File Presentasi
+                </a>
+                <a href="website/index.html" target="_blank" class="btn btn-secondary btn-block">
+                    Hasil Website
+                </a>
+            </div>
+        </aside>
+
+        <!-- Sidebar Overlay for Mobile -->
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <div class="content-container">
+                <!-- Breadcrumb/Badge -->
+                <div class="stage-badge-container">
+                    <span class="badge stage-badge">Stage 4: Merancang Backend</span>
+                </div>
+
+                <!-- Main Header -->
+                <h1 class="main-title">Modul 4: Merancang Backend</h1>
+
+                <!-- Sub Modul 1 -->
+                <div id="sub1" class="sub-module-section">
+                    <h3 class="sub-module-title">4.1 Prompting per halaman</h3>
+                    <p class="main-lead">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.
+                    </p>
+                    <div class="hero-image-card">
+                        <img src="assets/modul4/gambar.png" alt="Prompting per halaman" class="hero-img">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Script file -->
+    <script src="script.js"></script>
+</body>
+
+</html>

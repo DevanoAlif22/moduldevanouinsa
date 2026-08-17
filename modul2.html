@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul Ajar: Brainstorming - Konsep Dasar</title>
+
+    <!-- Google Fonts & Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet">
+
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Top Progress Bar Container -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scrollProgress"></div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-left">
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+            <h2 class="header-title">IMPLEMENTASI UI/UX MENGGUNAKAN STITCH DAN ANTIGRAVITY</h2>
+        </div>
+        <div class="header-right">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+                <span class="material-symbols-outlined" id="themeIcon">dark_mode</span>
+            </button>
+        </div>
+    </header>
+
+    <div class="app-layout">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+
+
+            <nav class="sidebar-nav">
+                <ul class="nav-list">
+                    <li class="nav-item collapsed">
+                        <a href="index.html" class="nav-link">
+                            <span class="material-symbols-outlined">counter_1</span>
+                            <span>Pendahuluan</span>
+                            <span class="material-symbols-outlined caret-icon">expand_more</span>
+                        </a>
+                        <ul class="nav-sub-list">
+                            <li><a href="index.html#sub1" class="nav-sub-link">Pengenalan Stitch</a></li>
+                            <li><a href="index.html#sub2" class="nav-sub-link">Pengenalan Antigravity</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item collapsed">
+                        <a href="instalasi.html" class="nav-link">
+                            <span class="material-symbols-outlined">counter_2</span>
+                            <span>Instalasi & Setup</span>
+                            <span class="material-symbols-outlined caret-icon">expand_more</span>
+                        </a>
+                        <ul class="nav-sub-list">
+                            <li><a href="instalasi.html#sub1" class="nav-sub-link">Instalasi & Setup Antigravity</a></li>
+                            <li><a href="instalasi.html#sub2" class="nav-sub-link">Setup Google Stitch</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item collapsed">
+                        <a href="modul1.html" class="nav-link">
+                            <span class="material-symbols-outlined">counter_3</span>
+                            <span>Brainstorming</span>
+                            <span class="material-symbols-outlined caret-icon">expand_more</span>
+                        </a>
+                        <ul class="nav-sub-list">
+                            <li><a href="modul1.html#sub1" class="nav-sub-link">PRD (Requirement)</a></li>
+                            <li><a href="modul1.html#sub2" class="nav-sub-link">Referensi Desain</a></li>
+                            <li><a href="modul1.html#sub3" class="nav-sub-link">Design Md & Prompting</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="modul2.html" class="nav-link">
+                            <span class="material-symbols-outlined">counter_4</span>
+                            <span>Desain Prototype</span>
+                            <span class="material-symbols-outlined caret-icon">expand_more</span>
+                        </a>
+                        <ul class="nav-sub-list">
+                            <li><a href="modul2.html#sub1" class="nav-sub-link active">Prompting per halaman</a></li>
+                            <li><a href="modul2.html#sub2" class="nav-sub-link">Prototype</a></li>
+                            <li><a href="modul2.html#sub3" class="nav-sub-link">Setup dan Export MCP</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item collapsed">
+                        <a href="modul3.html" class="nav-link">
+                            <span class="material-symbols-outlined">counter_5</span>
+                            <span>Merancang Frontend</span>
+                            <span class="material-symbols-outlined caret-icon">expand_more</span>
+                        </a>
+                        <ul class="nav-sub-list">
+                            <li><a href="modul3.html#sub1" class="nav-sub-link">Prompting per halaman</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item collapsed">
+                        <a href="modul4.html" class="nav-link">
+                            <span class="material-symbols-outlined">counter_6</span>
+                            <span>Merancang Backend</span>
+                            <span class="material-symbols-outlined caret-icon">expand_more</span>
+                        </a>
+                        <ul class="nav-sub-list">
+                            <li><a href="modul4.html#sub1" class="nav-sub-link">Prompting per halaman</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item collapsed">
+                        <a href="modul5.html" class="nav-link">
+                            <span class="material-symbols-outlined">counter_7</span>
+                            <span>Deployment</span>
+                            <span class="material-symbols-outlined caret-icon">expand_more</span>
+                        </a>
+                        <ul class="nav-sub-list">
+                            <li><a href="modul5.html#sub1" class="nav-sub-link">Deploy dengan Github</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="modul3.html" class="btn btn-primary btn-block mb-3">
+                    Lanjutkan Belajar
+                </a>
+                <a href="#" class="btn btn-secondary btn-block mb-3">
+                    File Presentasi
+                </a>
+                <a href="website/index.html" target="_blank" class="btn btn-secondary btn-block">
+                    Hasil Website
+                </a>
+            </div>
+        </aside>
+
+        <!-- Sidebar Overlay for Mobile -->
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <div class="content-container">
+                <!-- Breadcrumb/Badge -->
+                <div class="stage-badge-container">
+                    <span class="badge stage-badge">Stage 2: Desain Prototype</span>
+                </div>
+
+                <!-- Main Header -->
+                <h1 class="main-title">Modul 2: Desain Prototype</h1>
+                <div class="hero-image-card">
+                    <img src="assets/modul2/gambar1.PNG" alt="Prompting per halaman" class="hero-img">
+                </div>
+
+                <!-- Sub Modul 1 -->
+                <div id="sub1" class="sub-module-section">
+                    <h3 class="sub-module-title">2.1 Prompting per halaman</h3>
+                    <p class="main-lead">
+                        Mari kita mulai merancang prototype web kita! Ikuti langkah-langkah panduan praktis berikut
+                        untuk melakukan setting design system dan prompting halaman demi halaman:
+                    </p>
+
+                    <div class="prd-details-card">
+                        <h4 style="margin-top: 0;">Langkah 1: Mengatur Design System (Setting Desain md)</h4>
+                        <p
+                            style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 12px; font-size: 15px;">
+                            Sebelum mulai memasukkan prompt halaman, hal pertama yang harus dilakukan adalah melakukan
+                            konfigurasi design system awal pada generator workspace. Aturlah variabel visual seperti
+                            palet warna utama (brand colors), pilihan font, ukuran spacing/padding, dan border radius
+                            agar sesuai dengan dokumen <code>design.md</code> yang telah dibuat di Modul 1.
+                        </p>
+                        <div class="hero-image-card"
+                            style="max-width: 500px; margin: 0 0 24px 0; border: 1px solid var(--outline-variant); border-radius: var(--radius-md); overflow: hidden;">
+                            <img src="assets/modul2/tutorial1.PNG" alt="Tutorial Setting Desain" class="hero-img">
+                        </div>
+
+                        <h4>Langkah 2: Memulai Prompt Halaman Pertama</h4>
+                        <p
+                            style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 12px; font-size: 15px;">
+                            Setelah workspace siap, mulailah dengan menyalin dan memasukkan (drop) prompt lengkap untuk
+                            halaman utama (misal: Landing Page). Ini akan memandu AI dalam membangun kerangka layout
+                            awal yang sesuai dengan kebutuhan produk.
+                        </p>
+                        <div class="hero-image-card"
+                            style="max-width: 500px; margin: 0 0 24px 0; border: 1px solid var(--outline-variant); border-radius: var(--radius-md); overflow: hidden;">
+                            <img src="assets/modul2/tutorial5.PNG" alt="Tutorial Drop Prompt Pertama" class="hero-img">
+                        </div>
+
+                        <h4>Langkah 3: Memperbaiki Section yang Kurang</h4>
+                        <p
+                            style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 12px; font-size: 15px;">
+                            Jangan khawatir jika hasil render pertama tidak langsung sempurna. Jika ada bagian atau
+                            section yang kurang lengkap atau tidak sesuai, Anda bisa melakukan prompt revisi khusus pada
+                            halaman pertama tersebut untuk menambahkan detail section yang terlewat.
+                        </p>
+                        <div class="hero-image-card"
+                            style="max-width: 500px; margin: 0 0 24px 0; border: 1px solid var(--outline-variant); border-radius: var(--radius-md); overflow: hidden;">
+                            <img src="assets/modul2/tutorial3.PNG" alt="Tutorial Iterasi Section" class="hero-img">
+                        </div>
+
+                        <h4>Langkah 4: Melanjutkan Prompt Halaman Berikutnya</h4>
+                        <p
+                            style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 20px; font-size: 15px;">
+                            Apabila halaman pertama sudah dirasa cukup pas, barulah Anda melanjutkan proses prompting
+                            untuk halaman-halaman berikutnya secara berurutan agar alur navigasinya terbentuk dengan
+                            logis.
+                        </p>
+
+                        <h4>Langkah 5: Quick Edit untuk Menyamakan Komponen</h4>
+                        <p
+                            style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 12px; font-size: 15px;">
+                            Jika ada yang berbeda (misalnya footer) bisa diklik quick edit dan samakan dengan page sebelumnya. Untuk menghasilkan output yang spesifik, kita harus tau nama komponen yang akan kita rubah, kita bisa lihat di <a href="https://component.gallery/" target="_blank" style="color: var(--primary); text-decoration: underline;">https://component.gallery/</a>.
+                        </p>
+                        <div class="hero-image-card"
+                            style="max-width: 500px; margin: 0 0 24px 0; border: 1px solid var(--outline-variant); border-radius: var(--radius-md); overflow: hidden;">
+                            <img src="assets/modul2/tutorial2.PNG" alt="Tutorial Quick Edit" class="hero-img">
+                        </div>
+
+                        <h4>Langkah 6: Menambahkan Gambar atau Aset Mandiri</h4>
+                        <p
+                            style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 12px; font-size: 15px;">
+                            Jika ada gambar ilustrasi atau ikon yang tidak ditemukan atau tidak tampil dengan benar saat
+                            proses generate, Anda bisa mengunggah (upload) aset gambar Anda sendiri secara mandiri untuk
+                            melengkapinya.
+                        </p>
+                        <div class="hero-image-card"
+                            style="max-width: 500px; margin: 0 0 24px 0; border: 1px solid var(--outline-variant); border-radius: var(--radius-md); overflow: hidden;">
+                            <img src="assets/modul2/tutorial4.PNG" alt="Tutorial Upload Gambar" class="hero-img">
+                        </div>
+
+                        <h4>Langkah 7: Merapikan Navbar dan Detail Penulisan</h4>
+                        <p
+                            style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 20px; font-size: 15px;">
+                            Luangkan waktu sejenak untuk memeriksa navbar menu, tautan-tautan link antar halaman, serta
+                            kerapian penulisan kata agar situs prototype Anda terlihat bersih, profesional, dan mudah
+                            digunakan.
+                        </p>
+
+                        <h4>Langkah 8: Menyelesaikan Halaman Lainnya</h4>
+                        <p
+                            style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 20px; font-size: 15px;">
+                            Lanjutkan proses prompting ini untuk halaman-halaman selanjutnya satu demi satu hingga
+                            seluruh modul rancangan selesai dibuat secara utuh.
+                        </p>
+
+                        <h4>Langkah 9: Menambah Halaman yang Terlewat</h4>
+                        <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 0; font-size: 15px;">
+                            Jika di tengah jalan Anda merasa ada halaman penting yang terlewat, jangan ragu untuk
+                            kembali lagi ke Gemini untuk meminta bantuan merumuskan prompt baru khusus untuk halaman
+                            tambahan tersebut.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Sub Modul 2 -->
+                <div id="sub2" class="sub-module-section">
+                    <h3 class="sub-module-title">2.2 Prototype</h3>
+                    <div class="hero-image-card">
+                        <img src="assets/modul2/gambar2.png" alt="Prototype" class="hero-img">
+                    </div>
+                    <p class="main-lead">
+                        Langkah selanjutnya adalah merakit halaman-halaman yang sudah dibuat menjadi satu alur
+                        interaktif.
+                    </p>
+                    <p style="margin-bottom: 24px;">
+                        Anda dapat menggunakan fitur <strong>Stitch Generate Prototipe Instan</strong>. Caranya adalah
+                        dengan memilih seluruh halaman yang telah Anda rancang di workspace, kemudian klik tombol
+                        <strong>Generate Prototipe Instan</strong> untuk menghubungkan navigasi antar halaman secara
+                        otomatis.
+                    </p>
+
+                    <div class="hero-image-card"
+                        style="border: 1px solid var(--outline-variant); border-radius: var(--radius-md); overflow: hidden; margin-bottom: 24px;">
+                        <img src="assets/modul2/prototipeinstan.PNG" alt="Stitch Generate Prototipe Instan"
+                            class="hero-img">
+                    </div>
+
+                </div>
+
+                <!-- Sub Modul 3 -->
+                <div id="sub3" class="sub-module-section">
+                    <h3 class="sub-module-title">2.3 Setup dan Export MCP</h3>
+                    <div class="hero-image-card">
+                        <img src="assets/modul2/gambar3.png" alt="Export MCP" class="hero-img">
+                    </div>
+                    <p class="main-lead">
+                        Berikut adalah langkah-langkah untuk melakukan setup dan melakukan ekspor Model Context Protocol
+                        (MCP) di Google Stitch:
+                    </p>
+
+                    <div class="prd-details-card">
+                        <h4 style="margin-top: 0;">Langkah 1: Akses Pengaturan Stitch</h4>
+                        <p
+                            style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 20px; font-size: 15px;">
+                            Masuk ke halaman pengaturan Google Stitch di <a
+                                href="https://stitch.withgoogle.com/settings" target="_blank"
+                                style="color: var(--primary); text-decoration: underline;">https://stitch.withgoogle.com/settings</a>.
+                        </p>
+
+                        <h4>Langkah 2: Siapkan MCP Baru</h4>
+                        <p
+                            style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 12px; font-size: 15px;">
+                            Buat konfigurasi MCP baru di workspace Anda, kemudian salin (copy) tautan integrasi unik
+                            yang disediakan.
+                        </p>
+                        <div class="hero-image-card"
+                            style="max-width: 500px; margin: 0 0 20px 0; border: 1px solid var(--outline-variant); border-radius: var(--radius-md); overflow: hidden;">
+                            <img src="assets/modul2/tutorial7.PNG" alt="Tutorial Siapkan MCP Baru" class="hero-img">
+                        </div>
+
+                        <h4>Langkah 3: Salin Prompt Halaman</h4>
+                        <p
+                            style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 12px; font-size: 15px;">
+                            Kembali ke halaman utama workspace Anda, pilih halaman visual yang ingin diekspor sebagai
+                            MCP, lalu salin prompt ekspornya.
+                        </p>
+                        <div class="hero-image-card"
+                            style="max-width: 500px; margin: 0; border: 1px solid var(--outline-variant); border-radius: var(--radius-md); overflow: hidden;">
+                            <img src="assets/modul2/tutorial6.PNG" alt="Tutorial Setup & Export MCP" class="hero-img">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Script file -->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan &amp; Harga - Kodemuda Web Agency</title>
+    <meta name="description" content="Pilih paket pembuatan website profesional transparan dari Kodemuda Web Agency. Starter, Company Profile, dan Enterprise Custom Web App.">
+    <!-- Load custom stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Decorative Background Shapes -->
+    <div class="absolute inset-0 bg-pattern opacity-30 pointer-events-none -z-10" style="height: 100%;"></div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[500px] bg-blob-primary blur-[120px] opacity-60 pointer-events-none -z-10"></div>
+
+    <!-- TopNavBar -->
+    <header class="sticky-nav">
+        <div class="nav-container">
+            <!-- Brand Logo -->
+            <a class="nav-logo group" href="index.html">
+                <div class="nav-logo-box">
+                    <span class="material-symbols-outlined text-[20px] material-fill">code</span>
+                </div>
+                <span class="nav-logo-text">Kodemuda</span>
+            </a>
+            
+            <!-- Navigation Links (Desktop) -->
+            <nav class="nav-links">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link active" href="services.html">Services</a>
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                <a class="nav-link" href="about.html">About</a>
+            </nav>
+            
+            <!-- Trailing Action -->
+            <div class="nav-actions">
+                <a class="btn btn-sm btn-primary" href="about.html#contact-section">
+                    Konsultasi Free
+                </a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+        
+        <!-- Mobile Sidebar Nav -->
+        <div class="mobile-nav-menu">
+            <a class="mobile-nav-link" href="index.html">Home</a>
+            <a class="mobile-nav-link active" href="services.html">Services</a>
+            <a class="mobile-nav-link" href="portfolio.html">Portfolio</a>
+            <a class="mobile-nav-link" href="about.html">About</a>
+            <a class="btn btn-primary" href="about.html#contact-section">Konsultasi Free</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow z-10 w-full max-w-container-max mx-auto px-8">
+        
+        <!-- Page Header Section -->
+        <section class="pt-32 pb-16 text-center flex flex-col items-center">
+            <div class="pill-badge pill-badge-sky mb-6" style="border: 1px solid var(--primary-fixed);">
+                <span class="material-symbols-outlined text-[16px] material-fill">verified</span>
+                Investasi Transparan
+            </div>
+            <h1 class="text-headline-lg mb-6 max-w-4xl mx-auto">
+                Pilih Paket Website Sesuai <span class="text-primary">Skala Bisnis Anda</span>
+            </h1>
+            <p class="text-body-md text-on-surface-variant max-w-2xl mx-auto">
+                Tanpa biaya tersembunyi. Semua paket sudah termasuk domain, hosting, dan garansi maintenance untuk memastikan website Anda selalu optimal.
+            </p>
+        </section>
+
+        <!-- Pricing Cards Section -->
+        <section class="py-12">
+            <div class="pricing-grid" style="max-width: 1140px;">
+                <!-- Card 1: Starter -->
+                <div class="pricing-card">
+                    <div class="mb-8">
+                        <h3 class="text-headline-sm mb-2">Paket Starter</h3>
+                        <p class="text-body-sm text-on-surface-variant mb-6">Mulai dari <span class="text-headline-sm text-primary block mt-1" style="font-size: 1.5rem; display:block;">Rp 1.000.000+</span></p>
+                        <div class="pill-badge pill-badge-primary" style="background-color: var(--surface-low); color: var(--on-surface-variant); border: 1px solid var(--surface-container-highest);">
+                            Target: UMKM &amp; Personal Brand
+                        </div>
+                    </div>
+                    <ul class="pricing-features-list">
+                        <li><span class="material-symbols-outlined icon-green material-fill">check_circle</span> 1 Single Page Landing Page</li>
+                        <li><span class="material-symbols-outlined icon-green material-fill">check_circle</span> Mobile Responsive</li>
+                        <li><span class="material-symbols-outlined icon-green material-fill">check_circle</span> WhatsApp Direct Button</li>
+                        <li><span class="material-symbols-outlined icon-green material-fill">check_circle</span> Basic SEO (Meta &amp; GSC)</li>
+                        <li><span class="material-symbols-outlined icon-green material-fill">check_circle</span> Free .com/.id &amp; Hosting 1 Year</li>
+                        <li><span class="material-symbols-outlined icon-green material-fill">check_circle</span> Pengerjaan 3-5 Hari</li>
+                    </ul>
+                    <a class="btn btn-outline w-full" href="about.html#contact-section">
+                        Pilih Paket Starter
+                    </a>
+                </div>
+
+                <!-- Card 2: Company Profile (HIGHLIGHTED) -->
+                <div class="pricing-card pricing-card-featured">
+                    <div class="absolute pill-badge pill-badge-amber" style="top: -12px; left: 50%; transform: translateX(-50%); z-index: 10;">
+                        <span class="material-symbols-outlined text-[16px] material-fill" style="color:var(--on-secondary-container);">star</span> Paling Populer
+                    </div>
+                    <div class="mb-8 mt-2">
+                        <h3 class="text-headline-sm mb-2">Paket Company Profile</h3>
+                        <p class="text-body-sm pricing-desc mb-6">Mulai dari <span class="text-headline-md block mt-1" style="font-size: 2.25rem; display:block;">Rp 3.000.000+</span></p>
+                        <div class="pill-badge pill-badge-sky" style="background-color: var(--soft-sky-tint); color: var(--primary); border: 1px solid var(--primary-fixed);">
+                            Target: Perusahaan, Agensi, Klinik
+                        </div>
+                    </div>
+                    <ul class="pricing-features-list">
+                        <li><span class="material-symbols-outlined icon-white material-fill">check_circle</span> Multi-Page (Home, About, etc)</li>
+                        <li><span class="material-symbols-outlined icon-white material-fill">check_circle</span> Easy CMS / Admin Panel</li>
+                        <li><span class="material-symbols-outlined icon-white material-fill">check_circle</span> Advanced SEO Optimization</li>
+                        <li><span class="material-symbols-outlined icon-white material-fill">check_circle</span> Google Maps &amp; Inquiry Form</li>
+                        <li><span class="material-symbols-outlined icon-white material-fill">check_circle</span> Pengerjaan 7-14 Hari</li>
+                        <li><span class="material-symbols-outlined icon-white material-fill">check_circle</span> Free Support 6 Bulan</li>
+                    </ul>
+                    <a class="btn btn-secondary w-full" href="about.html#contact-section" style="background-color: var(--surface-lowest); color: var(--primary);">
+                        Pilih Company Profile
+                    </a>
+                </div>
+
+                <!-- Card 3: Enterprise -->
+                <div class="pricing-card" style="background-color: var(--surface-low);">
+                    <div class="mb-8">
+                        <h3 class="text-headline-sm mb-2">Paket Enterprise</h3>
+                        <p class="text-body-sm text-on-surface-variant mb-6">Penawaran Khusus <span class="text-headline-sm text-slate-dark block mt-1" style="font-size: 1.5rem; display:block;">Custom Quote</span></p>
+                        <div class="pill-badge" style="background-color: var(--surface-container-high); color: var(--on-surface-variant); border: 1px solid var(--surface-container-highest);">
+                            Target: Startup, Web App, Portal
+                        </div>
+                    </div>
+                    <ul class="pricing-features-list">
+                        <li><span class="material-symbols-outlined text-slate-dark material-fill" style="color:var(--slate-dark);">check_circle</span> Full Custom Web App</li>
+                        <li><span class="material-symbols-outlined text-slate-dark material-fill" style="color:var(--slate-dark);">check_circle</span> Database &amp; API Integration</li>
+                        <li><span class="material-symbols-outlined text-slate-dark material-fill" style="color:var(--slate-dark);">check_circle</span> Payment Gateway / Booking</li>
+                        <li><span class="material-symbols-outlined text-slate-dark material-fill" style="color:var(--slate-dark);">check_circle</span> High Security Architecture</li>
+                        <li><span class="material-symbols-outlined text-slate-dark material-fill" style="color:var(--slate-dark);">check_circle</span> Maintenance SLA &amp; Priority</li>
+                    </ul>
+                    <a class="btn btn-dark w-full" href="about.html#contact-section">
+                        Konsultasi Custom Project
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Comparison Matrix -->
+        <section class="py-section-gap-lg max-w-container-max mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-headline-md mb-4">Perbandingan Fitur Detail</h2>
+                <p class="text-body-md text-on-surface-variant">Komparasi komprehensif untuk membantu Anda memilih paket yang tepat.</p>
+            </div>
+            
+            <div class="table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 30%;">Fitur Utama</th>
+                            <th style="text-align: center; width: 23%;">Starter</th>
+                            <th class="table-highlight" style="text-align: center; width: 24%;">Company Profile</th>
+                            <th style="text-align: center; width: 23%;">Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="font-semibold" style="color: var(--on-surface);">Jumlah Halaman</td>
+                            <td style="text-align: center;">1 (Single Page)</td>
+                            <td class="cell-highlight" style="text-align: center;">Up to 10 Pages</td>
+                            <td style="text-align: center;">Custom / Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold" style="color: var(--on-surface);">CMS Admin Panel</td>
+                            <td style="text-align: center;"><span class="material-symbols-outlined table-icon-close">close</span></td>
+                            <td class="cell-highlight" style="text-align: center;"><span class="material-symbols-outlined table-icon-check">check</span></td>
+                            <td style="text-align: center;"><span class="material-symbols-outlined table-icon-check">check</span></td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold" style="color: var(--on-surface);">SEO Optimization</td>
+                            <td style="text-align: center;">Basic (Meta tags)</td>
+                            <td class="cell-highlight" style="text-align: center;">Advanced (On-Page)</td>
+                            <td style="text-align: center;">Custom Strategy</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold" style="color: var(--on-surface);">Custom Domain</td>
+                            <td style="text-align: center;"><span class="material-symbols-outlined table-icon-check">check</span></td>
+                            <td class="cell-highlight" style="text-align: center;"><span class="material-symbols-outlined table-icon-check">check</span></td>
+                            <td style="text-align: center;"><span class="material-symbols-outlined table-icon-check">check</span></td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold" style="color: var(--on-surface);">Google Search Console</td>
+                            <td style="text-align: center;"><span class="material-symbols-outlined table-icon-check">check</span></td>
+                            <td class="cell-highlight" style="text-align: center;"><span class="material-symbols-outlined table-icon-check">check</span></td>
+                            <td style="text-align: center;"><span class="material-symbols-outlined table-icon-check">check</span></td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold" style="color: var(--on-surface);">Batas Revisi</td>
+                            <td style="text-align: center;">2x Minor</td>
+                            <td class="cell-highlight" style="text-align: center;">5x Minor &amp; Major</td>
+                            <td style="text-align: center;">Sesuai Kontrak</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold" style="color: var(--on-surface);">Waktu Pengerjaan</td>
+                            <td style="text-align: center;">3-5 Hari Kerja</td>
+                            <td class="cell-highlight" style="text-align: center;">7-14 Hari Kerja</td>
+                            <td style="text-align: center;">Timeline Custom</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold" style="color: var(--on-surface);">Maintenance Support</td>
+                            <td style="text-align: center;">1 Bulan</td>
+                            <td class="cell-highlight" style="text-align: center;">6 Bulan Priority</td>
+                            <td style="text-align: center;">SLA Terjamin</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Transparent Payment & FAQ Accordion -->
+        <section class="py-section-gap-lg max-w-container-max mx-auto">
+            <div class="text-center mb-10">
+                <h2 class="text-headline-md mb-4">Pertanyaan Seputar Layanan</h2>
+                <p class="text-body-md text-on-surface-variant">Transparansi adalah kunci kami bekerja dengan Anda.</p>
+            </div>
+            
+            <div class="faq-container">
+                <details class="faq-item">
+                    <summary>
+                        Bagaimana sistem pembayarannya?
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </summary>
+                    <div class="faq-content">
+                        Sistem pembayaran kami sangat transparan. Kami mewajibkan Down Payment (DP) sebesar 50% di awal proyek untuk memulai desain dan pengembangan. Sisa 50% dilunasi setelah website selesai 100%, disetujui oleh Anda, dan siap untuk di-live-kan ke publik.
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>
+                        Apakah ada biaya perpanjangan tahunan?
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </summary>
+                    <div class="faq-content">
+                        Ya, ada biaya perpanjangan untuk domain dan hosting yang wajib dibayarkan setiap tahun agar website Anda tetap aktif. Biaya ini berkisar mulai dari Rp500.000 hingga Rp1.500.000 tergantung spesifikasi server yang Anda gunakan. Kami akan mengingatkan Anda 30 hari sebelum masa aktif berakhir.
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>
+                        Berapa kali batas revisi yang diberikan?
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </summary>
+                    <div class="faq-content">
+                        Batas revisi bergantung pada paket yang dipilih. Paket Starter mendapatkan 2x revisi minor (teks/gambar). Paket Company Profile mendapatkan 5x revisi minor dan major (layout). Kami memastikan Anda puas dengan hasil akhir sebelum website diluncurkan.
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>
+                        Apakah saya bisa update isi website sendiri nantinya?
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </summary>
+                    <div class="faq-content">
+                        Tentu saja. Untuk paket Company Profile dan Enterprise, kami menyediakan Content Management System (CMS) yang mudah digunakan. Anda dapat menambah artikel blog, mengubah teks, atau mengganti gambar tanpa perlu mengerti bahasa pemrograman. Kami juga memberikan sesi training singkat cara penggunaannya.
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- Direct Custom Inquiry Banner -->
+        <section class="py-section-gap-lg">
+            <div class="pricing-card pricing-card-featured" style="padding: 3rem; text-align: center; max-w: 800px; margin: 0 auto; border-radius: var(--radius-3xl); overflow: hidden;">
+                <div class="absolute bg-primary-fixed rounded-full blur-[80px] opacity-30 pointer-events-none" style="top: -6rem; right: -6rem; width: 16rem; height: 16rem;"></div>
+                <h2 class="text-headline-md mb-4" style="color: #ffffff;">Punya kebutuhan fitur khusus atau budget tersendiri?</h2>
+                <p class="text-body-md mb-8 max-w-2xl mx-auto" style="color: var(--primary-fixed-dim);">
+                    Jangan ragu untuk berdiskusi dengan tim kami. Kami siap mendengarkan visi Anda dan memberikan solusi teknis terbaik yang sesuai dengan anggaran dan target bisnis Anda.
+                </p>
+                <a class="btn btn-whatsapp" href="about.html#contact-section" style="background-color: var(--surface-lowest); color: var(--primary);">
+                    <span class="material-symbols-outlined material-fill" style="color: var(--primary);">chat</span>
+                    Mari Diskusikan via WhatsApp
+                </a>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <!-- Brand Column -->
+            <div class="footer-col">
+                <a class="footer-brand" href="index.html">
+                    <div class="footer-brand-box">
+                        <span class="material-symbols-outlined text-[20px] material-fill">code</span>
+                    </div>
+                    <span class="footer-brand-text">Kodemuda</span>
+                </a>
+                <p class="text-body-sm text-on-surface-variant mt-2">
+                    Membangun ekosistem digital untuk masa depan bisnis Anda. Cepat, aman, dan dapat diandalkan.
+                </p>
+            </div>
+            
+            <!-- Links Column 1 -->
+            <div class="footer-col">
+                <h4>Perusahaan</h4>
+                <ul class="footer-links">
+                    <li><a class="footer-link" href="about.html">About</a></li>
+                    <li><a class="footer-link" href="services.html">Services</a></li>
+                    <li><a class="footer-link" href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </div>
+            
+            <!-- Links Column 2 -->
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul class="footer-links">
+                    <li><a class="footer-link" href="#">Privacy Policy</a></li>
+                    <li><a class="footer-link" href="#">Terms of Service</a></li>
+                    <li><a class="footer-link" href="about.html#contact-section">Contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact Column -->
+            <div class="footer-col">
+                <h4>Hubungi Kami</h4>
+                <ul class="footer-links">
+                    <li class="footer-link flex gap-2 items-center" style="display:flex;">
+                        <span class="material-symbols-outlined" style="font-size:16px;">location_on</span>
+                        Sidoarjo, Jawa Timur
+                    </li>
+                    <li class="footer-link flex gap-2 items-center" style="display:flex;">
+                        <span class="material-symbols-outlined" style="font-size:16px;">mail</span>
+                        hello@kodemuda.com
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2026 Kodemuda Web Development Agency. Built for performance.
+                </p>
+                <div class="footer-socials">
+                    <a class="footer-social-btn" href="#" aria-label="Website Link">
+                        <span class="material-symbols-outlined" style="font-size:18px;">public</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Load custom javascript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
