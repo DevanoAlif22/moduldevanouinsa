@@ -10,27 +10,31 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-        htmlElement.setAttribute('data-theme', 'dark');
-        themeIcon.textContent = 'light_mode';
-    } else {
-        htmlElement.setAttribute('data-theme', 'light');
-        themeIcon.textContent = 'dark_mode';
+    if (themeIcon) {
+        if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+            htmlElement.setAttribute('data-theme', 'dark');
+            themeIcon.textContent = 'light_mode';
+        } else {
+            htmlElement.setAttribute('data-theme', 'light');
+            themeIcon.textContent = 'dark_mode';
+        }
     }
 
     // Toggle theme callback
-    themeToggle.addEventListener('click', () => {
-        const currentTheme = htmlElement.getAttribute('data-theme');
-        if (currentTheme === 'dark') {
-            htmlElement.setAttribute('data-theme', 'light');
-            themeIcon.textContent = 'dark_mode';
-            localStorage.setItem('theme', 'light');
-        } else {
-            htmlElement.setAttribute('data-theme', 'dark');
-            themeIcon.textContent = 'light_mode';
-            localStorage.setItem('theme', 'dark');
-        }
-    });
+    if (themeToggle && themeIcon) {
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            if (currentTheme === 'dark') {
+                htmlElement.setAttribute('data-theme', 'light');
+                themeIcon.textContent = 'dark_mode';
+                localStorage.setItem('theme', 'light');
+            } else {
+                htmlElement.setAttribute('data-theme', 'dark');
+                themeIcon.textContent = 'light_mode';
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    }
 
     // ==========================================================================
     // 2. Mobile Sidebar Toggle Drawer
@@ -40,17 +44,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const sidebarOverlay = document.getElementById('sidebarOverlay');
 
     function openSidebar() {
-        sidebar.classList.add('open');
-        sidebarOverlay.classList.add('visible');
+        if (sidebar) sidebar.classList.add('open');
+        if (sidebarOverlay) sidebarOverlay.classList.add('visible');
     }
 
     function closeSidebar() {
-        sidebar.classList.remove('open');
-        sidebarOverlay.classList.remove('visible');
+        if (sidebar) sidebar.classList.remove('open');
+        if (sidebarOverlay) sidebarOverlay.classList.remove('visible');
     }
 
-    menuToggle.addEventListener('click', openSidebar);
-    sidebarOverlay.addEventListener('click', closeSidebar);
+    if (menuToggle) {
+        menuToggle.addEventListener('click', openSidebar);
+    }
+    if (sidebarOverlay) {
+        sidebarOverlay.addEventListener('click', closeSidebar);
+    }
 
     // Close mobile sidebar when clicking sub-links
     const navLinks = document.querySelectorAll('.nav-sub-link, .nav-link, .footer-link');
@@ -87,17 +95,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==========================================================================
     const scrollProgressBar = document.getElementById('scrollProgress');
 
-    window.addEventListener('scroll', () => {
-        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    if (scrollProgressBar) {
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 
-        let scrolled = 0;
-        if (height > 0) {
-            scrolled = (winScroll / height) * 100;
-        }
+            let scrolled = 0;
+            if (height > 0) {
+                scrolled = (winScroll / height) * 100;
+            }
 
-        scrollProgressBar.style.width = scrolled + '%';
-    });
+            scrollProgressBar.style.width = scrolled + '%';
+        });
+    }
 
     // ==========================================================================
     // 4. Interactive Tabs Logic for Ecosystem Components
@@ -364,4 +374,78 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // ==========================================================================
+    // 8. Image Lightbox Modal
+    // ==========================================================================
+    const contentImages = document.querySelectorAll('.hero-image-card img, .bento-image-card img, .card-body img, .content img, .grid-left img, img.hero-img');
+
+    if (contentImages.length > 0) {
+        // Create lightbox modal elements
+        const modal = document.createElement('div');
+        modal.className = 'lightbox-modal';
+        
+        const wrapper = document.createElement('div');
+        wrapper.className = 'lightbox-wrapper';
+
+        const modalImg = document.createElement('img');
+        modalImg.className = 'lightbox-img';
+        modalImg.alt = 'Enlarged view';
+
+        const closeBtn = document.createElement('button');
+        closeBtn.className = 'lightbox-close';
+        closeBtn.setAttribute('aria-label', 'Close Image');
+        closeBtn.innerHTML = '<span class="material-symbols-outlined">close</span>';
+
+        wrapper.appendChild(modalImg);
+        wrapper.appendChild(closeBtn);
+        modal.appendChild(wrapper);
+        document.body.appendChild(modal);
+
+        // Open modal
+        function showModal(src) {
+            modalImg.src = src;
+            modal.style.display = 'flex';
+            // Trigger animation frame
+            requestAnimationFrame(() => {
+                modal.classList.add('show');
+            });
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close modal
+        function hideModal() {
+            modal.classList.remove('show');
+            // Wait for transition before hiding display
+            setTimeout(() => {
+                if (!modal.classList.contains('show')) {
+                    modal.style.display = 'none';
+                    modalImg.src = '';
+                    document.body.style.overflow = '';
+                }
+            }, 300);
+        }
+
+        // Add event listeners to all zoomable images
+        contentImages.forEach(img => {
+            img.addEventListener('click', (e) => {
+                e.stopPropagation();
+                showModal(img.src);
+            });
+        });
+
+        // Close modal clicks
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal || e.target === closeBtn || closeBtn.contains(e.target)) {
+                hideModal();
+            }
+        });
+
+        // ESC key close support
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('show')) {
+                hideModal();
+            }
+        });
+    }
 });

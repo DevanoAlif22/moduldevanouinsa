@@ -1226,3 +1226,98 @@ button {
     display: inline-block;
     margin: 0 auto;
 }
+
+/* ==========================================================================
+   Image Lightbox / Modal
+   ========================================================================== */
+.lightbox-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    cursor: zoom-out;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.lightbox-modal.show {
+    display: flex;
+    opacity: 1;
+}
+
+.lightbox-wrapper {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-img {
+    max-width: 100%;
+    max-height: 90vh;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+    object-fit: contain;
+    cursor: default;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.lightbox-modal.show .lightbox-img {
+    transform: scale(1);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: -48px;
+    right: 0;
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.lightbox-close:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.lightbox-close span {
+    font-size: 24px;
+}
+
+/* Make images zoomable */
+.hero-image-card img, 
+.bento-image-card img,
+.card-body img,
+.content img,
+.grid-left img,
+img.hero-img {
+    cursor: zoom-in;
+    transition: transform var(--transition-fast), filter var(--transition-fast);
+}
+
+.hero-image-card img:hover, 
+.bento-image-card img:hover,
+.card-body img:hover,
+.content img:hover,
+.grid-left img:hover,
+img.hero-img:hover {
+    transform: scale(1.015);
+    filter: brightness(1.05);
+}

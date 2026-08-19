@@ -14,9 +14,11 @@ tutorial3.png
 tutorial2.png
 6. Gambar yang tidak ditemukan bisa upload sendiri
 tutorial4.png
-7. Sesuaikan navbar, penulisan, dll.
-8. Prompt seterusnya
-9. Jika ada halaman yang kurang, bisa balik lagi ke gemini untuk dibuatkan promptnya
+7. Jika ingin membuat opsi atau variasi lain dapat menggunakan fitur generate variasi dan pilih halaman dan apa yang ingin dirubah (contoh layout sesuai referensi gambar yang di inginkan)
+tutorial8.png
+8. Sesuaikan navbar, penulisan, dll.
+9. Prompt seterusnya
+10. Jika ada halaman yang kurang, bisa balik lagi ke gemini untuk dibuatkan promptnya
 
 sub modul 2 : Prototype
 gambar2.png
