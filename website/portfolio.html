@@ -7,6 +7,8 @@
     <meta name="description" content="Jelajahi berbagai proyek website modern, cepat, dan SEO-friendly yang telah kami kembangkan di Kodemuda Web Development Agency.">
     <!-- Load custom stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Load Animate On Scroll (AOS) Stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -62,7 +64,7 @@
     <main class="flex-grow z-10 pt-32 pb-section-gap-lg px-8 w-full max-w-container-max mx-auto">
         
         <!-- Header Section -->
-        <section class="text-center max-w-4xl mx-auto mb-16 relative">
+        <section class="text-center max-w-4xl mx-auto mb-16 relative" data-aos="fade-up">
             <span class="pill-badge pill-badge-sky mb-6">
                 <span class="material-symbols-outlined text-sm material-fill">star</span>
                 Rekam Jejak &amp; Hasil Karya
@@ -76,7 +78,7 @@
         </section>
 
         <!-- Interactive Category Filter Bar -->
-        <section class="filter-bar">
+        <section class="filter-bar" data-aos="fade-up">
             <button class="filter-btn active">Semua Proyek</button>
             <button class="filter-btn">Landing Page</button>
             <button class="filter-btn">Company Profile</button>
@@ -87,7 +89,7 @@
         <section class="grid grid-cols-1 grid-md-cols-2 grid-lg-cols-3 gap-8 mb-section-gap-sm">
             
             <!-- Project Card 1 -->
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-aos="fade-up" data-aos-delay="0">
                 <div class="portfolio-img-container">
                     <img alt="E-Notaris Platform Mockup" class="portfolio-img" src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=600">
                     <span class="portfolio-tag">Custom Web App</span>
@@ -113,7 +115,7 @@
             </div>
             
             <!-- Project Card 2 -->
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-aos="fade-up" data-aos-delay="100">
                 <div class="portfolio-img-container">
                     <img alt="Tiberman Checklist System Mockup" class="portfolio-img" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=600">
                     <span class="portfolio-tag">Custom Web App</span>
@@ -139,7 +141,7 @@
             </div>
             
             <!-- Project Card 3 -->
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-aos="fade-up" data-aos-delay="200">
                 <div class="portfolio-img-container">
                     <img alt="Kedai Kopi Local Landing Page Mockup" class="portfolio-img" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=600">
                     <span class="portfolio-tag">Landing Page</span>
@@ -165,7 +167,7 @@
             </div>
             
             <!-- Project Card 4 -->
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-aos="fade-up" data-aos-delay="0">
                 <div class="portfolio-img-container">
                     <img alt="SaaS Analytics Dashboard Mockup" class="portfolio-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600">
                     <span class="portfolio-tag">Custom Web App</span>
@@ -191,7 +193,7 @@
             </div>
             
             <!-- Project Card 5 -->
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-aos="fade-up" data-aos-delay="100">
                 <div class="portfolio-img-container">
                     <img alt="Luxury Real Estate Mockup" class="portfolio-img" src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=600">
                     <span class="portfolio-tag">Company Profile</span>
@@ -217,7 +219,7 @@
             </div>
             
             <!-- Project Card 6 -->
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-aos="fade-up" data-aos-delay="200">
                 <div class="portfolio-img-container">
                     <img alt="Education Learning Portal Mockup" class="portfolio-img" src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=80&w=600">
                     <span class="portfolio-tag">Custom Web App</span>
@@ -245,7 +247,7 @@
         </section>
 
         <!-- Metrics Summary Bar (Bento style) -->
-        <section class="mb-section-gap-lg">
+        <section class="mb-section-gap-lg" data-aos="fade-up">
             <div class="bento-stats">
                 <div class="absolute inset-0 bg-pattern opacity-30 z-0"></div>
                 <div class="bento-stats-grid">
@@ -270,7 +272,7 @@
         </section>
 
         <!-- Bottom Consultation CTA -->
-        <section class="glass-card" style="padding: 3rem; border-radius: var(--radius-3xl); text-align: center; max-w: 800px; margin: 0 auto; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); position: relative; overflow: hidden;">
+        <section class="glass-card" style="padding: 3rem; border-radius: var(--radius-3xl); text-align: center; max-w: 800px; margin: 0 auto; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); position: relative; overflow: hidden;" data-aos="zoom-in">
             <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-r from-soft-sky-tint to-primary-fixed rounded-full blur-3xl opacity-30 -z-10"></div>
             <h2 class="text-headline-md mb-4">Ingin Website Seperti Ini untuk Bisnis Anda?</h2>
             <p class="text-body-md text-body-text mb-8 max-w-xl mx-auto">Konsultasikan kebutuhan digital Anda bersama tim ahli kami. Mulai wujudkan platform impian Anda hari ini.</p>
@@ -347,6 +349,14 @@
         </div>
     </footer>
 
+    <!-- Load Animate On Scroll (AOS) Javascript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
     <!-- Load custom javascript -->
     <script src="js/main.js"></script>
 </body>

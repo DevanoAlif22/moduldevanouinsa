@@ -7,6 +7,8 @@
     <meta name="description" content="Pilih paket pembuatan website profesional transparan dari Kodemuda Web Agency. Starter, Company Profile, dan Enterprise Custom Web App.">
     <!-- Load custom stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Load Animate On Scroll (AOS) Stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -60,7 +62,7 @@
     <main class="flex-grow z-10 w-full max-w-container-max mx-auto px-8">
         
         <!-- Page Header Section -->
-        <section class="pt-32 pb-16 text-center flex flex-col items-center">
+        <section class="pt-32 pb-16 text-center flex flex-col items-center" data-aos="fade-up">
             <div class="pill-badge pill-badge-sky mb-6" style="border: 1px solid var(--primary-fixed);">
                 <span class="material-symbols-outlined text-[16px] material-fill">verified</span>
                 Investasi Transparan
@@ -77,7 +79,7 @@
         <section class="py-12">
             <div class="pricing-grid" style="max-width: 1140px;">
                 <!-- Card 1: Starter -->
-                <div class="pricing-card">
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="0">
                     <div class="mb-8">
                         <h3 class="text-headline-sm mb-2">Paket Starter</h3>
                         <p class="text-body-sm text-on-surface-variant mb-6">Mulai dari <span class="text-headline-sm text-primary block mt-1" style="font-size: 1.5rem; display:block;">Rp 1.000.000+</span></p>
@@ -99,7 +101,7 @@
                 </div>
 
                 <!-- Card 2: Company Profile (HIGHLIGHTED) -->
-                <div class="pricing-card pricing-card-featured">
+                <div class="pricing-card pricing-card-featured" data-aos="fade-up" data-aos-delay="100">
                     <div class="absolute pill-badge pill-badge-amber" style="top: -12px; left: 50%; transform: translateX(-50%); z-index: 10;">
                         <span class="material-symbols-outlined text-[16px] material-fill" style="color:var(--on-secondary-container);">star</span> Paling Populer
                     </div>
@@ -124,7 +126,7 @@
                 </div>
 
                 <!-- Card 3: Enterprise -->
-                <div class="pricing-card" style="background-color: var(--surface-low);">
+                <div class="pricing-card" style="background-color: var(--surface-low);" data-aos="fade-up" data-aos-delay="200">
                     <div class="mb-8">
                         <h3 class="text-headline-sm mb-2">Paket Enterprise</h3>
                         <p class="text-body-sm text-on-surface-variant mb-6">Penawaran Khusus <span class="text-headline-sm text-slate-dark block mt-1" style="font-size: 1.5rem; display:block;">Custom Quote</span></p>
@@ -147,7 +149,7 @@
         </section>
 
         <!-- Feature Comparison Matrix -->
-        <section class="py-section-gap-lg max-w-container-max mx-auto">
+        <section class="py-section-gap-lg max-w-container-max mx-auto" data-aos="fade-up">
             <div class="text-center mb-12">
                 <h2 class="text-headline-md mb-4">Perbandingan Fitur Detail</h2>
                 <p class="text-body-md text-on-surface-variant">Komparasi komprehensif untuk membantu Anda memilih paket yang tepat.</p>
@@ -218,7 +220,7 @@
         </section>
 
         <!-- Transparent Payment & FAQ Accordion -->
-        <section class="py-section-gap-lg max-w-container-max mx-auto">
+        <section class="py-section-gap-lg max-w-container-max mx-auto" data-aos="fade-up">
             <div class="text-center mb-10">
                 <h2 class="text-headline-md mb-4">Pertanyaan Seputar Layanan</h2>
                 <p class="text-body-md text-on-surface-variant">Transparansi adalah kunci kami bekerja dengan Anda.</p>
@@ -269,7 +271,7 @@
 
         <!-- Direct Custom Inquiry Banner -->
         <section class="py-section-gap-lg">
-            <div class="pricing-card pricing-card-featured" style="padding: 3rem; text-align: center; max-w: 800px; margin: 0 auto; border-radius: var(--radius-3xl); overflow: hidden;">
+            <div class="pricing-card pricing-card-featured" style="padding: 3rem; text-align: center; max-w: 800px; margin: 0 auto; border-radius: var(--radius-3xl); overflow: hidden;" data-aos="zoom-in">
                 <div class="absolute bg-primary-fixed rounded-full blur-[80px] opacity-30 pointer-events-none" style="top: -6rem; right: -6rem; width: 16rem; height: 16rem;"></div>
                 <h2 class="text-headline-md mb-4" style="color: #ffffff;">Punya kebutuhan fitur khusus atau budget tersendiri?</h2>
                 <p class="text-body-md mb-8 max-w-2xl mx-auto" style="color: var(--primary-fixed-dim);">
@@ -349,6 +351,14 @@
         </div>
     </footer>
 
+    <!-- Load Animate On Scroll (AOS) Javascript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
     <!-- Load custom javascript -->
     <script src="js/main.js"></script>
 </body>
